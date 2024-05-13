@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/icon_bg">
+
+
+    <ImageView
+        android:id="@+id/imgMusic"
+        android:layout_width="match_parent"
+        android:layout_height="360dp" />
+
+    <TextView
+        android:id="@+id/NameMusic"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_below="@+id/imgMusic"
+        android:layout_marginTop="1dp"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/NameSinger"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_below="@+id/NameMusic"
+        android:layout_marginTop="0dp"
+        android:textSize="28dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_below="@+id/NameSinger"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/buttonPre"
+            android:layout_width="94dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="68dp"
+            android:src="@drawable/icon_previous" />
+
+        <ImageView
+            android:id="@+id/buttonPause"
+            android:layout_width="94dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="62dp" />
+
+        <ImageView
+            android:id="@+id/buttonNext"
+            android:layout_width="93dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/icon_next" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/NameSinger"
+        android:layout_marginTop="124dp"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:secondaryProgressTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/remainingTime"
+            android:layout_width="82dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/seekBar"
+            android:layout_alignBottom="@+id/seekBar"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="-40dp"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

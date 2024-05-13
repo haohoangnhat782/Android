@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:id="@+id/item_file">
+
+    <ImageView
+        android:id="@+id/imageViewIconfile"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/todo"
+        tools:ignore="ContentDescription" />
+<LinearLayout
+    android:layout_width="335dp"
+    android:layout_height="64dp">
+
+    <TextView
+        android:id="@+id/textViewNamefile"
+        android:layout_width="210dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewNameAlbum"
+        android:layout_width="102dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp" />
+
+</LinearLayout>
+
+
+</LinearLayout>
