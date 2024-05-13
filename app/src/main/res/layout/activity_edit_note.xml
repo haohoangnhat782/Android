@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditNoteActivity"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/mainTitle"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:id="@+id/noteLayout">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:id="@+id/titleInput"
+            android:hint="Note's title"
+            android:background="@drawable/border_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contentInput"
+            android:hint="Enter your note"
+            android:lines="10"
+            android:gravity="top"
+            android:background="@drawable/border_bg"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveNoteBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteLayout"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFDEF2"
+        android:paddingHorizontal="20dp"
+        android:text="SAVE NOTE"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/deleteNoteBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFDEF2"
+        android:paddingHorizontal="20dp"
+        android:text="DELETE NOTE"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</RelativeLayout>
